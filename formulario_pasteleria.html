@@ -1,0 +1,77 @@
+<!--El cliente de la pastelería tendrá la posibilidad de combinar sabores dependiendo de sus preferencias.
+El cliente de la pastelería tendrá la posibilidad de combinar adornos dependiendo de sus preferencias.
+El cliente de la pastelería necesita poner en un formulario su pedido.
+El formulario debe de contener los datos de contacto del cliente que son Nombre, Teléfono, Correo Electrónico, 
+Descripción general del pastel y la selección de sabores y adornos.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+     <!-- Headings -->
+     <h1>Orejas de gato</h1>
+      <!-- Imágenes -->
+    <img src="Logo_pasteleria.png" alt="Pastel" width="350px" height="350px">
+     <h1>Hacer Pedido</h1>
+
+     <hr>
+     <h3>Primero danos tus datos</h3>
+     <br>
+ <!--Datos del cliente-->
+     <label for="Nombre">Nombre</label><br>
+     <input type="text" id="nombre" name="nombre"><br><br>
+
+     <label for="correo1">Correo</label><br>
+     <input type="email" id="correo1" name="correo1"><br><br>
+     
+     <label for="tel1">Numero Teléfono</label><br>
+     <input type="tel" id="tel1" name="tel1" maxlength="10"><br><br>
+
+     <h5> Fecha de entrega del pastel</h5>
+     <input type="datetime-local" id="fecha2" name="fecha2"><br>
+
+    
+ 
+     <hr>
+     <h3>¿Qué pastel prepararemos par ti?</h3>
+     <!--input para elegir pan-->
+     <h4> Elige un tipo de biscocho</h4>
+     <input type="radio" id="vainilla" name="biscocho" value="Vainilla">
+     <label for="vainilla">Vainilla</label><br>
+     <input type="radio" id="chocolate" name="biscocho" value="Chololate">
+     <label for="chocolate">Chocolate</label><br>
+
+     <!--input para la eleccion del sabor del pastel-->
+     <h4> Elige un tipo de sabor de relleno y cobertura</h4>
+     <input type="radio" id="frutosR" name="relleno" value="FrutosR">
+     <label for="frutosR">Frutos Rojos</label><br>
+     <input type="radio" id="chocolateL" name="relleno" value="ChololateL">
+     <label for="chocolateL">Chocolate Lover</label><br>
+     <input type="radio" id="tormentaT" name="relleno" value="TormentaT">
+     <label for="tormentaT">Tormenta Tropical</label><br>
+     <input type="radio" id="mokaR" name="relleno" value="MokaR">
+     <label for="mokaR">Moka Rosador</label><br>
+
+     <!--input multiple par elecicon de decoraciones-->
+     <h4>Elige tus adornos</h4>
+     <input type="checkbox" id="topping1" name="topping1" value="Brillantina">
+     <label for="topping1">Brillantina</label><br>
+     <input type="checkbox" id="topping2" name="topping2" value="Letras">
+     <label for="topping2">Letras de merengue</label><br>
+     <input type="checkbox" id="topping3" name="topping3" value="Flores">
+     <label for="topping3">Flores de fondant</label><br>
+     <input type="checkbox" id="topping4" name="topping4" value="Frutas">
+     <label for="topping4">Frutas</label><br><br>
+
+     <h4> Color de preferencia para betun</h4>
+     <input type="color" id="color1" name="color1"><br><br>
+     <input type="button" value="Terminar pedido">
+
+ 
+    
+</body>
+</html>
